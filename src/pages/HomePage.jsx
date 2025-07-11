@@ -16,6 +16,7 @@ import {
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import GTranslate from "../../components/TranslateBtn";
+import GTranslateGlobe from "../../components/GlobetranslateBtn";
 
 // CardComp remains the same as it was correct.
 function CardComp({ template, onClick }) {
@@ -124,6 +125,7 @@ function HomePage() {
           Featured Templates
         </Title>
         <GTranslate/>
+        <GTranslateGlobe/>
         <Flex gap={16} wrap={"wrap"}>
           {templates.map((template) => (
             <CardComp
