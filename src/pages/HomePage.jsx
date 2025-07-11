@@ -15,6 +15,7 @@ import {
   Modal,
 } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
+import GTranslate from "../../components/TranslateBtn";
 
 // CardComp remains the same as it was correct.
 function CardComp({ template, onClick }) {
@@ -122,6 +123,7 @@ function HomePage() {
         <Title order={1} mb={20} tt={"uppercase"}>
           Featured Templates
         </Title>
+        <GTranslate/>
         <Flex gap={16} wrap={"wrap"}>
           {templates.map((template) => (
             <CardComp
